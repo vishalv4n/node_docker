@@ -1,11 +1,15 @@
 FROM 200.0.1.100:5000/node 
 
+
+
+
 WORKDIR /app
 
 
-CMD npm install
 
 COPY . .
+
+RUN npm install
 
 EXPOSE 4000
 
