@@ -9,7 +9,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install
+RUN npm install express
+RUN npm install mysql
 
 EXPOSE 4000
 
